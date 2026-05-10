@@ -300,11 +300,11 @@ html, body {
     color: rgba(255,255,255,0.85);
 }
 
-.materi-section ul {
+.materi-section ul ol {
     list-style: none;
     padding: 0;
 }
-.materi-section ul li {
+.materi-section ul li ol {
     padding: 8px 0 8px 28px;
     position: relative;
     font-size: 14px;
