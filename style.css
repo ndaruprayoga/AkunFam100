@@ -300,14 +300,42 @@ html, body {
     color: rgba(255,255,255,0.85);
 }
 
-.materi-section ul,
-.materi-section ol {
+/* =====================================================
+    MATERI SCREEN
+   ===================================================== */
+.materi-content {
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.materi-section {
+    margin-bottom: 32px;
+}
+
+.materi-section h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(245,200,66,0.2);
+}
+
+.materi-section p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.85);
+}
+
+.materi-section ul ol {
     list-style: none;
     padding: 0;
 }
-
-.materi-section ul li,
-.materi-section ol li {
+.materi-section ul li ol {
     padding: 8px 0 8px 28px;
     position: relative;
     font-size: 14px;
@@ -315,9 +343,7 @@ html, body {
     color: rgba(255,255,255,0.85);
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-
-.materi-section ul li::before,
-.materi-section ol li::before {
+.materi-section ul li::before {
     content: '▸';
     position: absolute;
     left: 8px;
@@ -484,24 +510,31 @@ html, body {
     border-bottom: 1px solid rgba(245,200,66,0.2);
 }
 
+.petunjuk-section ul,
 .petunjuk-section ol {
-    padding-left: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.petunjuk-section ol li,
-.petunjuk-sub ul li {
+
+.petunjuk-section ul li,
+.petunjuk-section ol li {
+    padding: 8px 0 8px 28px;
+    position: relative;
     font-size: 14px;
     line-height: 1.7;
-    color: rgba(255,255,255,0.85);
-    margin-bottom: 4px;
+    color: rgba(255,255,255,0.9);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-.petunjuk-section ol li strong,
-.petunjuk-sub ul li strong { color: var(--white); }
-.petunjuk-section code {
-    background: rgba(255,255,255,0.1);
-    border-radius: 4px;
-    padding: 1px 6px;
-    font-size: 13px;
-    font-family: monospace;
+
+.petunjuk-section ul li::before,
+.petunjuk-section ol li::before {
+    content: '▸';
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    color: var(--gold);
+    font-size: 12px;
 }
 
 .petunjuk-sub {
