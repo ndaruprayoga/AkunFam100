@@ -20,23 +20,37 @@
       <div class="logo-sub">100</div>
     </div>
     <p class="tagline">Media Pembelajaran Interaktif<br/><strong>Jurnal Penyesuaian</strong></p>
-    <nav class="main-menu">
-      <button class="menu-btn btn-materi" onclick="showScreen('screen-materi')">
-        <span class="menu-icon">📚</span>
-        <span class="menu-label">Materi</span>
-        <span class="menu-desc">Pelajari konsep jurnal penyesuaian</span>
-      </button>
-      <button class="menu-btn btn-petunjuk" onclick="showScreen('screen-petunjuk')">
-        <span class="menu-icon">📋</span>
-        <span class="menu-label">Petunjuk</span>
-        <span class="menu-desc">Cara penggunaan aplikasi</span>
-      </button>
-      <button class="menu-btn btn-bermain" onclick="showScreen('screen-mode')">
-        <span class="menu-icon">🎮</span>
-        <span class="menu-label">Bermain</span>
-        <span class="menu-desc">Uji kemampuanmu sekarang!</span>
-      </button>
-    </nav>
+  <nav class="main-menu">
+
+  <!-- PETUNJUK PALING ATAS -->
+  <button class="menu-btn btn-petunjuk" onclick="showScreen('screen-petunjuk')">
+    <span class="menu-icon">📋</span>
+    <span class="menu-label">Petunjuk Penggunaan</span>
+    <span class="menu-desc">Cara penggunaan aplikasi</span>
+  </button>
+
+  <!-- TUJUAN -->
+  <button class="menu-btn btn-tujuan" onclick="showScreen('screen-tujuan')">
+    <span class="menu-icon">🎯</span>
+    <span class="menu-label">Tujuan & Capaian</span>
+    <span class="menu-desc">Tujuan dan capaian pembelajaran</span>
+  </button>
+
+  <!-- MATERI -->
+  <button class="menu-btn btn-materi" onclick="showScreen('screen-materi')">
+    <span class="menu-icon">📚</span>
+    <span class="menu-label">Materi</span>
+    <span class="menu-desc">Pelajari konsep jurnal penyesuaian</span>
+  </button>
+
+  <!-- BERMAIN -->
+  <button class="menu-btn btn-bermain" onclick="showScreen('screen-mode')">
+    <span class="menu-icon">🎮</span>
+    <span class="menu-label">Bermain</span>
+    <span class="menu-desc">Uji kemampuanmu sekarang!</span>
+  </button>
+
+</nav>
     <div class="footer-credit">AkunFam 100 · Media Pembelajaran Akuntansi</div>
   </div>
 </div>
@@ -152,6 +166,40 @@
   <img src="qr.jpeg" class="gambar-img">
   <p class="gambar-text">Untuk penjelasan materi secara lengkap, bisa scan kode QR</p>
 </div>
+</div>
+
+<!-- ===================== LAYAR TUJUAN ===================== -->
+<div id="screen-tujuan" class="screen">
+  <div class="screen-header">
+    <button class="back-btn" onclick="showScreen('screen-main')">
+      ← Kembali
+    </button>
+    <h2>🎯 Tujuan & Capaian Pembelajaran</h2>
+  </div>
+
+  <div class="petunjuk-content">
+
+    <div class="petunjuk-section">
+      <h3>🎯 Tujuan Pembelajaran</h3>
+      <ol>
+        <li>Memahami konsep jurnal penyesuaian dalam akuntansi.</li>
+        <li>Mengidentifikasi jenis-jenis jurnal penyesuaian.</li>
+        <li>Menyusun ayat jurnal penyesuaian dengan benar.</li>
+        <li>Menerapkan prinsip akrual pada akhir periode akuntansi.</li>
+      </ol>
+    </div>
+
+    <div class="petunjuk-section">
+      <h3>🏆 Capaian Pembelajaran</h3>
+      <ul>
+        <li>Peserta didik mampu menjelaskan fungsi jurnal penyesuaian.</li>
+        <li>Peserta didik mampu membedakan akun debit dan kredit dalam penyesuaian.</li>
+        <li>Peserta didik mampu menghitung dan mencatat penyesuaian sederhana.</li>
+        <li>Peserta didik mampu menyelesaikan soal jurnal penyesuaian secara mandiri maupun kelompok.</li>
+      </ul>
+    </div>
+
+  </div>
 </div>
 
 <!-- ===================== LAYAR PETUNJUK ===================== -->
