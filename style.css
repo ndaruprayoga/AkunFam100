@@ -300,11 +300,14 @@ html, body {
     color: rgba(255,255,255,0.85);
 }
 
-.materi-section ul ol {
+.materi-section ul,
+.materi-section ol {
     list-style: none;
     padding: 0;
 }
-.materi-section ul li ol {
+
+.materi-section ul li,
+.materi-section ol li {
     padding: 8px 0 8px 28px;
     position: relative;
     font-size: 14px;
@@ -312,7 +315,9 @@ html, body {
     color: rgba(255,255,255,0.85);
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-.materi-section ul li::before {
+
+.materi-section ul li::before,
+.materi-section ol li::before {
     content: '▸';
     position: absolute;
     left: 8px;
