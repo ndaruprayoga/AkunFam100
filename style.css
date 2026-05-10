@@ -529,7 +529,6 @@ html, body {
 
 .petunjuk-section ul li::before,
 .petunjuk-section ol li::before {
-    content: '▸';
     position: absolute;
     left: 8px;
     top: 8px;
