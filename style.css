@@ -532,14 +532,7 @@ html, body {
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.petunjuk-section ul li::before,
-.petunjuk-section ol li::before {
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    color: var(--gold);
-    font-size: 12px;
-}
+
 
 .petunjuk-sub {
     margin-top: 16px;
